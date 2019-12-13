@@ -1,46 +1,89 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <!-- Metadata goes in the head -->
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-    <title>Things I've Learned</title>
+    <meta name="author" content="James Cordrey" />
+    <meta
+      name="description"
+      content="Everything you need to know about beer!"
+    />
+    <link href="styles/style.css" rel="stylesheet" />
+    <link
+      href="https://fonts.googleapis.com/css?family=Bebas+Neue&display=swap"
+      rel="stylesheet"
+    />
+    <title>My Test Page</title>
   </head>
+
   <body>
-    <!-- Content goes in the body -->
-    <h1>Things I've Learned</h1>
-    <h2>Internet Basics</h2>
-    <ol>
-      <li>HTTP Requests</li>
-      <li>IP Address</li>
-      <li>Servers</li>
-    </ol>
-    <h2>HTML</h2>
-    <ul>
-      <li>Stands for <strong>Hyper Text Markup Language</strong></li>
-      <li>
-        Lots of tags
-        <ul>
-          <li>Boilerplate
-            <ol>
-              <li>DOCTYPE</li>
-              <li>HTML</li>
-              <li>Head
-                <ol>
-                  <li>Title</li>
-                </ol>
-              </li>
-              <li>Body</li>
-            </ol>
-          </li>
-          <li>Headings</li>
-          <li>Paragraph</li>
-          <li><em>em</em></li>
-          <li><strong>strong</strong></li>
+    <header>
+      <h1>Beer is cool, yo!</h1>
+      <nav>
+        <div class="nav-links">
+        <ul class="links-list">
+          <li><a href="#pic">Picture </a></li>
+          <li><a href="#about">Text</a></li>
+          <li><a href="#video">Video</a></li>
         </ul>
-      </li>
-    </ul>
+        </div>
+      </nav>  
+      <p class="header-description">
+        This is my <span class="bold">beer</span> page
+      </p>
+    </header>
+
+    <main>
+      <figure id="pic">
+        <img src="images/beer.jpg" alt="A glass of beer." />
+        <figcaption>Drink Me!</figcaption>
+      </figure>
+      <p id="about">
+        Beer is an fermented, alcoholic beverage that has been brewed and
+        consumed for centuries.
+      </p>
+      <p>Beer is made from four ingredients:</p>
+      <ul>
+        <li>malt</li>
+        <li>water</li>
+        <li>hops</li>
+        <li>yeast</li>
+      </ul>
+      <p>
+        Read more about
+        <a
+          href="https://en.wikipedia.org/wiki/Beer"
+          target="_blank"
+          title="Click me!"
+          >beer and how it is made</a
+        >.
+      </p>
+      <figure>
+        <iframe id="video"
+          width="100%"
+          height="382"
+          src="https://www.youtube.com/embed/L0xES5CesMg"
+          frameborder="0"
+          allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+          allowfullscreen
+        >
+          <p>
+            <a
+              href="https://www.youtube.com/watch?v=L0xES5CesMg&feature=emb_title"
+            >
+              Fallback link for browsers that don't support iframes
+            </a>
+          </p>
+        </iframe>
+        <figcaption> A brief explaination of the brewing process</figcaption>
+      </figure>
+      <button>Change user</button>
+      <script src="scripts/main.js"></script>
+    </main>
+
+    <footer>
+      <p class="footer">Copyright 2020 JCInc. All rights reserved.</p>
+    </footer>
   </body>
 </html>
-
